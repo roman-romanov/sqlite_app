@@ -3,8 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:sqlite_app/internal/application.dart';
 
 void main() {
-   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
       statusBarIconBrightness: Brightness.dark));
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(SqliteApp());
 }

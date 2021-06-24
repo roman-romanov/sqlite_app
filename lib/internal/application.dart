@@ -8,11 +8,12 @@ class SqliteApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'SqliteApp',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Home(title: 'Flutter Demo Home Page'),
+      home: Home(title: 'Sqlite Application'),
     );
   }
 }
